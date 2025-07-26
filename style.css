@@ -12,6 +12,10 @@ body {
   background-color: #0118d8;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* LAYOUT GERAL DA PÁGINA */
 .containerGeral {
   display: grid;
@@ -107,6 +111,9 @@ p .p {
   border-radius: 12px;
   box-shadow: 4px 4px 12px #aaaa;
   padding: auto;
+  margin-left: 0.8rem;
+  margin-bottom: 1rem;
+  align-self: auto;
 }
 .cardGeral :hover {
   cursor: pointer;
@@ -178,6 +185,59 @@ td {
   height: 37.5rem;
 }
 /* FINAL DA SECTION - CLASSE TABLE */
+
+/* Início da section Formulário */
+legend {
+  font-size: 2rem;
+}
+
+.formPai {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff8f8;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px black;
+  width: auto;
+  height: 450px;
+}
+label {
+  color: black;
+  font-size: 1.5rem;
+  padding-top: 5px;
+  font-weight: 900;
+}
+input {
+  width: 80%;
+}
+.descricao {
+  width: 80%;
+}
+.Enviar {
+  padding: 7px 5px;
+  margin: 7px 5px;
+  border-radius: 12px;
+  box-shadow: 4px black;
+  background-color: #2192ff;
+  font-weight: 700;
+}
+
+.Limpar {
+  padding: 7px 5px;
+  margin: 7px 5px;
+  border-radius: 12px;
+  box-shadow: 4px black;
+  background-color: #2192ff;
+  font-weight: 700;
+}
+/* Final da section formulário */
 
 /* footer */
 .container {
