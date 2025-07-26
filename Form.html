@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="CSS/form.css" />
+  <title>FORMULÁRIO DE CADASTRO</title>
+</head>
+
+<body>
+
+
+
+  <form action="https://httpbin.org/post" method="post" target="_blank">
+    <fieldset>
+
+      <legend>Formulário de Cadastro</legend>
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"  placeholder="Dígite seu e-mail" required />
+       <label for="descrição">Deixe seu Comentário:</label>
+       <textarea name="descricao" rows="8" cols="3" class="descricao"></textarea>          
+        <div class="btns">
+          <button class="Enviar" id="Enviar" type="submit" methor="post">
+            Enviar
+          </button>
+          <button class="Limpar" id="Limpar" type="reset" methor="post">
+            Limpar
+          </button>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+  </form>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

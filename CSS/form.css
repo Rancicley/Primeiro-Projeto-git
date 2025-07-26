@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(/img/fundo\ azul.webp);
+  background-position: center;
+  background-size: cover;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  min-height: 100vh;
+}
+legend {
+  font-size: 30px;
+  color: rgb(36, 26, 23);
+  font-weight: 900;
+}
+body .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f0f0f0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  height: 90%;
+  width: 90%;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #5ec6e0;
+  height: 65%;
+  width: 35%;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+label {
+  margin-top: 8px;
+}
+input {
+  padding: 8px;
+}
+
+.Enviar {
+  width: 60px;
+  background-color: yellow;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.Limpar {
+  width: 60px;
+  background-color: yellow;
+  font-weight: bold;
+}
+.btn {
+  margin-top: 40px;
+  height: 50px;
+}
+

@@ -1,0 +1,259 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  background-color: #0118d8;
+}
+
+/* LAYOUT GERAL DA PÁGINA */
+.containerGeral {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-areas:
+    "header header header header"
+    "main   main   main    main"
+    "footer footer footer footer";
+}
+span {
+  font-size: 1.5rem;
+  color: #fff8f8;
+}
+header {
+  width: 100%;
+  grid-area: header;
+}
+main {
+  grid-area: main;
+  color: white;
+  margin: auto;
+  justify-content: space-evenly;
+}
+footer {
+  grid-area: footer;
+  color: white;
+}
+
+/* FINAL DO LAYOUT */
+
+/* INÍCIO DO HEADER */
+.imgB {
+  width: 5rem;
+}
+.nav-link {
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+li :hover {
+  background-color: #2192ff;
+  border-radius: 12px;
+  transition: 3s;
+}
+/* FINAL DO HEADER */
+
+/* INÍCIO DO MAIN */
+
+/* INÍCIO DA PRIMEIRA SECTION - CLASSE HOME */
+.HOME {
+  height: fit-content;
+  width: 80vw;
+  padding: 0.1em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.HOME h1 {
+  margin: auto auto;
+  color: #e6c058;
+  font-size: 3.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p .p {
+  padding: 0.1em;
+  margin: auto;
+}
+
+.p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff8f8;
+  margin-top: 3.3rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  padding-right: 0.1em;
+}
+/* FINAL DA SECTION - CLASSE HOME */
+
+.cardPai {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.cardGeral {
+  background-color: #fff;
+  width: 200px;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px #aaaa;
+  padding: auto;
+}
+.cardGeral :hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.cardGeral h2 {
+  font-size: 1.2rem;
+  padding: auto;
+  color: black;
+}
+.cardGeral h3 {
+  font-size: 1rem;
+  color: #aaaa;
+  padding-bottom: 8px;
+}
+.cardGeral h3:hover {
+  color: darkslategray;
+}
+.cardGeral button {
+  background-color: #2192ff;
+  height: 30px;
+  border: none;
+  padding: 4px;
+  width: 80%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 12px;
+}
+.cardGeral button:hover {
+  cursor: pointer;
+}
+img {
+  margin: auto auto;
+  height: auto;
+  width: 100%;
+}
+
+/* INÍCIO DA SECTION - CLASSE TABLE */
+.Tabela {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10rem;
+}
+.h2r {
+  color: #e6c058;
+  margin: auto;
+  padding: auto;
+  font-weight: 900;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 0.6em;
+  text-align: center;
+}
+th {
+  color: black;
+  font-weight: 900;
+  background-color: #fff8f8;
+}
+td {
+  color: #fff8f8;
+  font-weight: 900;
+}
+
+.Tabela {
+  height: 37.5rem;
+}
+/* FINAL DA SECTION - CLASSE TABLE */
+
+/* footer */
+.container {
+  display: flex;
+  color: black;
+  font-size: 1.5rem;
+}
+.numTel {
+  font-weight: 900;
+  color: #e6c058;
+  display: block;
+}
+.footer1 {
+  font-size: 1.3rem;
+  display: block;
+  color: #fff8f8;
+}
+.footer2 ul li {
+  display: block;
+  color: #fff8f8;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-top: 2rem;
+}
+.footer3 ul li {
+  display: block;
+  color: #fff8f8;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-top: 2rem;
+}
+.footer4 ul li {
+  display: block;
+  color: #fff8f8;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 1.5rem;
+}
+.containerFilho {
+  display: flex;
+  flex-direction: row;
+  padding: 4rem;
+}
+
+/* CONSERTANDO A RESPONSIVIDADE */
+
+@media (max-width: 1200px) {
+  .cardPai {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .cardPai {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .cardPai {
+    grid-template-columns: 1fr 1fr;
+  }
+  .containerFilho {
+    flex-direction: column;
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .cardPai {
+    grid-template-columns: 1fr;
+  }
+  .containerFilho {
+    flex-direction: column;
+  }
+}
+@media (max-width: 874px) {
+  .hamburguer {
+    display: block;
+  }
+}
